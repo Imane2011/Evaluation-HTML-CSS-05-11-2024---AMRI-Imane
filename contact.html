@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="photos/transparent-logo.jpg" alt="logo de l'entreprise">
+        <nav>
+            <div class="desktop">
+                <ul>
+                    <li><a href="index.html" title="acceuil" target="_blank">Acceuil</a></li>
+                    <li><a href="galerie.html" title="galerie" target="_blank">Galerie</a></li>
+                    <li><a href="apropos.html" title="apropos" target="_blank">A propos</a></li>
+                    <li><a href="contact.html" title="contact" target="_blank">Contact</a></li>   
+                </ul>
+            </div>
+
+            <div class="mobile">
+                <select name="mobile" id="mobile">
+                    <option value="index.html">Acceuil</option>
+                    <option value="galerie.html">Galerie</option>
+                    <option value="apropos.html">A propos</option>
+                    <option value="contact.html">Contact</option>
+                </select>
+            </div>
+            
+        </nav>
+    </header>
+    
+
+    <main>
+        
+            <h1>Notre formulaire de Contact</h1>
+        <form action="contact.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Informations personnelles</legend><br>
+                <div class="nom">
+                    <label for="nom">Nom :</label><br>
+                    <input type="text" name="nom" id="nom" required placeholder="Indiquez votre nom">
+                </div>
+
+                <div class="prenom">
+                    <label for="prenom">Prénom :</label><br>
+                <input type="text" name="prenom" id="prenom" required placeholder="Indiquez votre prénom">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email :</label><br>
+                    <input type="email" name="email" id="email"  required placeholder="Indiquez votre email">
+
+                </div>
+
+                <div class="tel">
+                    <label for="tel">Téléphone :</label><br>
+                    <input type="tel" name="tel" id="tel"  required placeholder="Indiquez votre numéro de téléphone">
+
+                </div>
+            </fieldset>
+                
+
+            <fieldset>
+                  <legend>Message</legend><br>
+                <div class="sujet">
+                    <label for="sujet">Sujet :</label><br>
+                    <input type="text" name="sujet" id="sujet">
+                </div><br>
+                        
+            
+                <div class="message">
+                    <label for="message">Votre message :</label><br>
+                    <textarea name="message" id="message" cols="50" rows="20" required placeholder="Ecrivez votre message"></textarea>
+        
+                 </div>
+                </fieldset>
+
+                <div class="bouton">
+                    <button type="submit" name="submit">Envoyer</button>
+                    <button type="reset">Annuler</button>
+                </div>
+
+                <div class="adresse">
+                    <address>
+                        <p>Entreprise la nouvelle génération</p>
+                        <p>14 allé Charles Pathés</p>
+                        <p>Bourges, 18000</p>
+                        <p>Téléphone : <a href="tel:+3320234567890">+33234567890</a></p>
+                        <p>Email : <a href="mailto:contact@lanouvelle-generation.com">contact@lanouvelle-generation.com</a></p>
+        
+                    </address>
+                </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 La nouvelle génération</p>
+        <section class="horaire">
+            <h3>Nos horaires :</h3><br>
+            <p>Lundi : 8h-12h / 14h-18h</p>
+            <p>Mardi : 8h-12h / 14h-18h</p>
+            <p>Mercredi : 8h-12h / 14h-18h</p>
+            <p>Jeudi : 8h-12h / 14h-18h</p>
+            <p>Vendredi : 8h-12h / 14h-18h</p>
+            <p>Samedi : Fermé</p>
+            <p>Dimanche : Fermé</p>
+        </section>
+
+        <section class="map">
+            <h3>Retrouvez-nous</h3><br>
+            <img src="photos/maps.PNG" alt="Notre local" usemap="#maps">
+            <map name="maps">
+            <area shape="rect" coords="0,0,100,100" href="https://g.co/kgs/kKCw4eo" alt="Google maps">
+            </map>
+        </section>
+    </footer>
+</body>
+</html>
